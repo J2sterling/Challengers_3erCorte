@@ -1,0 +1,58 @@
+/* Asegurarnos de que el body y el html ocupen el 100% de la pantalla */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Ajuste del navbar para que no interfiera con el contenido */
+nav {
+  background-color: #2c3e50;
+  padding: 1rem;
+  width: 100%;
+  position: fixed; /* Fija el navbar en la parte superior */
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: #f1c40f;
+}
+
+/* Ajuste para el contenido principal */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: calc(100vh - 60px); /* Resta la altura del navbar */
+  padding-top: 60px; /* Añade espacio para el navbar */
+}
+
+.home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
